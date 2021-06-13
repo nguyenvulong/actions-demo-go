@@ -10,5 +10,7 @@ jobs:
   build:
     runs-on: ubuntu-18.04
     steps:
-    - name: Hello World
-      run: ls -l && pwd && go run main      
+    - uses: actions/checkout@v2
+    - run: ls -l
+    - run: pwd
+    - run: go run main.go
